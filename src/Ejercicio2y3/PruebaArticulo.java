@@ -1,3 +1,4 @@
+package Ejercicio2y3;
 public class PruebaArticulo {
     private Articulo[] articulos;
     private int contador;

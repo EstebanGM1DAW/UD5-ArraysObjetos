@@ -1,3 +1,4 @@
+package Ejercicio1;
 public class Autobus {
     String matricula, modelo;
     int numeroPlazas, potenciaCV;

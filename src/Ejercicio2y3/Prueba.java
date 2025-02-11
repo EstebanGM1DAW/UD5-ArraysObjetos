@@ -1,3 +1,4 @@
+package Ejercicio2y3;
 import java.util.Scanner;
 
 public class Prueba {
