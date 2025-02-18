@@ -1,4 +1,4 @@
-package Ejercicio5;
+package Biblioteca;
 
 public class Autor {
     String nacionalidad;
