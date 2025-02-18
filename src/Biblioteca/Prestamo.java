@@ -1,4 +1,4 @@
-package Biblioteca;
+package biblioteca;
 
 public class Prestamo {
     String fechaPrestamo;
@@ -6,18 +6,40 @@ public class Prestamo {
     Libro libro;
     Cliente cliente;
     static int totalPrestamos;
-    public Prestamo(String feP, String feD, Libro lib, Cliente cli){
+
+    public Prestamo(String feP, String feD, Libro lib, Cliente cli) {
         this.cliente = cli;
         this.libro = lib;
         this.fechaDevolucion = feD;
         this.fechaPrestamo = feP;
         totalPrestamos++;
     }
-    @Override 
-    public String toString(){
-        String resultado = "Libro prestado: "+this.libro+" el dia "+this.fechaPrestamo+
-                            "\nal cliente "+this.cliente+" que lo devuelve el "+fechaDevolucion;
 
-        return resultado;
+    public String getFechaPrestamo() {
+        return fechaPrestamo;
+    }
+
+    public String getFechaDevolucion() {
+        return fechaDevolucion;
+    }
+
+    public Libro getLibro() {
+        return libro;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public static int getTotalPrestamos() {
+        return totalPrestamos;
+    }
+
+    @Override
+    public String toString() {
+        return "👤 Cliente: " + cliente.getNombre()+
+                "\n📖 Libro prestado: " + libro.getTitulo() +
+                "\n📅 Fecha de préstamo: " + fechaPrestamo +
+                "\n📅 Fecha de devolución: " + fechaDevolucion;
     }
 }

@@ -1,12 +1,12 @@
-package Biblioteca;
+package biblioteca;
 
 public class Libro {
     String codigo;
     String titulo;
-    String autor;
+    Autor autor;
     static int numLibros;
 
-    public Libro(String cod, String tit, String au){
+    public Libro(String cod, String tit, Autor au){
         numLibros++;
         this.autor = au;
         this.titulo = tit;
@@ -19,7 +19,7 @@ public class Libro {
         return resultado;
     }
 
-    public String getAutor(){
+    public Autor getAutor(){
         return this.autor;
     }
     public String getTitulo(){

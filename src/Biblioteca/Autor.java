@@ -1,4 +1,4 @@
-package Biblioteca;
+package biblioteca;
 
 public class Autor {
     String nacionalidad;
