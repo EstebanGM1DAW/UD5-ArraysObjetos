@@ -1,36 +1,49 @@
-package Ejercicio2y3;
+package ejercicio2y3;
+
 public class Articulo {
     private String codigo;
     private String descripcion;
     private double precioCompra;
     private double precioVenta;
     private int stock;
-    //CONSTRUCTOR
-    public Articulo(String cod, String desc){
+
+    // CONSTRUCTOR
+    public Articulo(String cod, String desc, double comp, double vent, int tock) {
         this.codigo = cod;
         this.descripcion = desc;
+        this.precioCompra = comp;
+        this.precioVenta = vent;
+        this.stock = tock;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         String mensaje = "";
-        mensaje = "Codigo: "+this.codigo+"|Descripcion: "+descripcion;
+        mensaje = "Codigo: " + codigo + " | Descripcion: " + descripcion + " | Stock: " + stock;
         return mensaje;
     }
-    //GETTERS
-    public String getCodigo(){
+
+    // GETTERS
+    public String getCodigo() {
         return codigo;
     }
-    public String getDescripcion(){
+
+    public String getDescripcion() {
         return descripcion;
     }
-    public double getPrecioCompra(){
+
+    public double getPrecioCompra() {
         return precioCompra;
     }
-    public double getPrecioVenta(){
+
+    public double getPrecioVenta() {
         return precioVenta;
     }
-    public int getStock(){
+
+    public int getStock() {
         return stock;
     }
+    //Metodos
     
+
 }
